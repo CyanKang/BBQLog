@@ -87,4 +87,4 @@ INSERT INTO `roms` (`IDRom`, `Name`) VALUES
 --
 
 INSERT INTO `roms_versions` (`IDRomVersion`, `IDRom`, `VersionName`) VALUES
-(1, 1, '10.2'),
+(1, 1, '10.2');
