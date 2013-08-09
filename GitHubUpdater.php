@@ -22,8 +22,8 @@ if (php_sapi_name() != "cli") {
 
 // Configs
 set_time_limit(0);
-require_once("/var/www/changelog/config.php");
-require_once("/var/www/changelog/Thread.php");
+require_once("/var/customers/webs/CyanKang/changelog.cyankang.de/config.php");
+require_once("/var/customers/webs/CyanKang/changelog.cyankang.de/Thread.php");
 
 /**
  * Escape the string to be given to MySQL
@@ -64,7 +64,7 @@ $repoCounter = 0;
 // Get all the information from all XML file.
 // Improved version, we also fetch the latest SHA from DB here. This avois us to 
 // use a thread to do it cause thread doesn't handle mysql connection well.
-$files = scandir("/var/www/changelog/projects/");
+$files = scandir("/var/customers/webs/CyanKang/changelog.cyankang.de/projects/");
 $repoID = array();
 $repoOwner = array();
 $repoName = array();
@@ -74,7 +74,7 @@ $lastCommitDBSHA = array();
 $att = 'name';
 $att2 = 'version';
 
-$xml = simplexml_load_file("/var/www/changelog/projects/cm.xml");//.$project);
+$xml = simplexml_load_file("/var/customers/webs/CyanKang/changelog.cyankang.de/projects/cm.xml");//.$project);
 $reposgeneric = $xml->xpath("//genericlist");
 $reposspecific = $xml->xpath("//specificlist");
 $owner = (string)$xml->owner;
