@@ -80,12 +80,11 @@ CREATE TABLE IF NOT EXISTS `roms_versions` (
 --
 
 INSERT INTO `roms` (`IDRom`, `Name`) VALUES
-(1, 'CyanogenMod');
+(1, 'CyanKang');
 
 --
 -- Dumping data for table `roms_versions`
 --
 
 INSERT INTO `roms_versions` (`IDRomVersion`, `IDRom`, `VersionName`) VALUES
-(1, 1, '9'),
-(2, 1, '7');
+(1, 1, '10.2'),

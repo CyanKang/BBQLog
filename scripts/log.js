@@ -3,7 +3,7 @@
  */
 
 var global_CurrentDevice = undefined;
-var global_CurrentVersion = "cm10.1"; // default
+var global_CurrentVersion = "cm10.2"; // default
 var global_CurrentDate = "";
 var global_DeviceCodeRepos = [];
 var global_ShowTranslations = false; // hide this shit by default
@@ -220,12 +220,10 @@ function updateListNightlies(_device, _version, _date) {
 			if (cancel || ($(this).children("title").text().indexOf("EXPERIMENTAL") <= 0 && $(this).children("title").text().indexOf("NIGHTLY") <= 0))
 				return;
 
-                        console.log($(this).children("title").text().indexOf("cm-10"));
+                        console.log($(this).children("title").text().indexOf("cm-10.2"));
 
                         // CM-specific, yet we don't have any generic way to do it.
-			if (_version == "cm10" && $(this).children("title").text().indexOf("cm-10") == -1 ||
-				_version == "cm9" && $(this).children("title").text().indexOf("cm-9") == -1 ||
-				_version == "cm7" && $(this).children("title").text().indexOf("cm-7") == -1) {
+			if (_version == "cm10.2" && $(this).children("title").text().indexOf("cm-10.2") == -1 {
 				return;
 			}
 

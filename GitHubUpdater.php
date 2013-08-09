@@ -14,7 +14,7 @@
  */
 
 // In the newer php version, we need to set up the time zone.
-date_default_timezone_set("Europe/Paris");
+date_default_timezone_set("Europe/Berlin");
 
 if (php_sapi_name() != "cli") {
 	die("Changelog updater must be run from CLI!");
